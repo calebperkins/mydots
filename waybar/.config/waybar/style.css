@@ -1,0 +1,127 @@
+@import "frappe.css";
+
+/* Main styles */
+
+* {
+  font-family: FantasqueSansMono Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#waybar {
+  background: @base;
+  color: @text;
+}
+
+/* Workspaces module https://man.archlinux.org/man/waybar-hyprland-workspaces.5.en#Style */
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px 0;
+  background-color: @surface0;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+#workspaces button.active {
+  color: @maroon;
+  background-color: @surface0;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+}
+
+#workspaces button.empty {}
+#workspaces button.visible {}
+#workspaces button.persistent {}
+#workspaces button.special {}
+#workspaces button.urgent {}
+#workspaces button.hosting-monitor {}
+
+/* Custom module (Arch logo) https://man.archlinux.org/man/waybar-custom.5.en#STYLE */
+
+#custom-logo {
+  color: @blue;
+}
+
+#custom-logo:hover {
+  color: @red;
+}
+
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio, #wireplumber {
+  background-color: @surface0;
+  padding: 0.2rem 0.5rem;
+  margin: 5px 0;
+}
+
+/* Clock module https://man.archlinux.org/man/waybar-clock.5.en#STYLE */
+
+#clock {
+  color: @blue;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: 1rem;
+}
+
+/* Battery module https://man.archlinux.org/man/waybar-battery.5.en#STYLE */
+
+#battery {
+  color: @green;
+  border-radius: 0;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+/* Backlight module https://man.archlinux.org/man/waybar-backlight.5.en#STYLE */
+
+#backlight {
+  color: @yellow;
+  border-radius: 0;
+}
+
+/* Pulseaudio https://man.archlinux.org/man/waybar-pulseaudio.5.en#STYLE */
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#pulseaudio.bluetooth {}
+#pulseaudio.muted {}
+
+/* Tray module https://man.archlinux.org/man/waybar-tray.5.en#STYLE */
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+#tray > .passive {}
+#tray > .active {}
+#tray > .need-attention {}
+
+/* Wireplumber module https://man.archlinux.org/man/waybar-wireplumber.5.en#STYLE */
+
+#wireplumber {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#wireplumber.muted {}

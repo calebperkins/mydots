@@ -9,6 +9,7 @@ vim.g.have_nerd_font = false
 
 require 'options'
 require 'keymaps'
+require 'lazy-bootstrap'
 require 'config.lazy'
 
 vim.cmd.colorscheme 'catppuccin'

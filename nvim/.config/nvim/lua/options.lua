@@ -17,4 +17,5 @@ end)
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
---vim.opt.showmode = false
+-- Hide the mode text, because the status line plugin has its own
+vim.opt.showmode = false

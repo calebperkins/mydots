@@ -4,9 +4,8 @@ return {
   config = function()
     require('lualine').setup {
       options = {
-	theme = 'catppuccin-frappe'
+	theme = 'catppuccin-frappe',
       }
     }
   end,
-  --event = 'VeryLazy',
 }

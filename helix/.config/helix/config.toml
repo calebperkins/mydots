@@ -2,3 +2,8 @@ theme = "catppuccin_frappe"
 
 [editor]
 bufferline = "always"
+color-modes = true
+
+[editor.indent-guides]
+render = true
+

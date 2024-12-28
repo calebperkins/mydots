@@ -38,7 +38,7 @@
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {
             "lock-screen": "hyprlock",
-            "log-out": "hyprctl dispatch exit",
+            "log-out": "uwsm stop",
             "shutdown": "systemctl poweroff",
             "reboot": "reboot",
             "suspend": "systemctl suspend",

@@ -37,7 +37,7 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {
-            "lock-screen": "hyprlock",
+            "lock-screen": "uwsm app -- hyprlock",
             "log-out": "uwsm stop",
             "shutdown": "systemctl poweroff",
             "reboot": "reboot",

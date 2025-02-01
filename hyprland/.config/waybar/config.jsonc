@@ -19,11 +19,13 @@
         "clock"
     ],
     "clock": {
+        // https://man.archlinux.org/man/extra/waybar/waybar-clock.5.en
         "format": "{:%I:%M %p}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%B %d, %Y}"
+        "tooltip-format": "{calendar}",
+        "format-alt": "{:%A, %B %e, %Y}"
     },
     "custom/logo": {
+        // https://man.archlinux.org/man/extra/waybar/waybar-custom.5.en
         "format": "  ",
         "tooltip": false,
         "menu": "on-click",
@@ -42,8 +44,9 @@
         "icon": false
     },
     "hyprland/workspaces": {
+        // https://man.archlinux.org/man/extra/waybar/waybar-hyprland-workspaces.5.en
         "on-click": "activate",
-        "format": "{icon}",
+        "format": "{name}",
         "format-icons": {
             "default": "",
             "1": "1",
@@ -58,11 +61,7 @@
             "active": "",
         },
         "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
+            "*": [],
         }
     },
     "idle_inhibitor": {

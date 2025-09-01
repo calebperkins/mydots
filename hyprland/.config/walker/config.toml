@@ -1,4 +1,4 @@
-app_launch_prefix = 'uwsm app -- '
+#app_launch_prefix = 'uwsm app -- '
 as_window = false
 close_when_open = false
 disable_click_to_close = false

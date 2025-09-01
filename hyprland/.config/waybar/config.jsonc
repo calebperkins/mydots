@@ -2,39 +2,38 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 34, // Waybar height (to be removed for auto height)
+    //"height": 34, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "custom/logo",
-        "hyprland/window",
+        "niri/window",
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "niri/workspaces",
     ],
     "modules-right": [
         "tray",
-        "idle_inhibitor",
         "wireplumber",
         "clock"
     ],
     "clock": {
         // https://man.archlinux.org/man/extra/waybar/waybar-clock.5.en
-        "format": "{:%I:%M %p}",
+        "format": "{:%a %B %e, %I:%M %p}",
         "tooltip-format": "{calendar}",
         "format-alt": "{:%A, %B %e, %Y}"
     },
     "custom/logo": {
         // https://man.archlinux.org/man/extra/waybar/waybar-custom.5.en
-        "format": "  ",
+        "format": " ",
         "tooltip": false,
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {
-            "lock-screen": "uwsm app -- hyprlock",
-            "log-out": "uwsm stop",
+            "lock-screen": "loginctl lock-session",
+            "log-out": "niri msg exit",
             "shutdown": "systemctl poweroff",
-            "reboot": "reboot",
+            "reboot": "systemctl reboot",
             "suspend": "systemctl suspend",
             "hibernate": "systemctl hibernate"
         }

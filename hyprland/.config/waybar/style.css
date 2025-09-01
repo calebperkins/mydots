@@ -53,6 +53,7 @@
 
 #custom-logo {
   color: @blue;
+  margin-left: 1rem;
 }
 
 #custom-logo:hover {

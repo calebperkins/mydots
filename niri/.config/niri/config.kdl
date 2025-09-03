@@ -565,6 +565,5 @@ binds {
 }
 
 environment {
-    DISPLAY ":0"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
 }

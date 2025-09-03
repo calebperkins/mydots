@@ -10,7 +10,7 @@
         "niri/window",
     ],
     "modules-center": [
-        "niri/workspaces",
+        "ext/workspaces",
     ],
     "modules-right": [
         "tray",

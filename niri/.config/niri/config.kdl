@@ -72,6 +72,8 @@ layout {
     // Set gaps around windows in logical pixels.
     gaps 16
 
+    always-center-single-column
+
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -126,7 +128,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#9bcded"
+        active-color "#df9bedff"
 
         // Color of the ring on inactive monitors.
         inactive-color "#949cbb"
@@ -545,3 +547,5 @@ layer-rule {
     match namespace="^quickshell-overview$"
     place-within-backdrop true
 }
+
+include "./noctalia.kdl"

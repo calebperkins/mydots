@@ -122,17 +122,6 @@ layout {
         // How many logical pixels the ring extends out from the windows.
         width 4
 
-        // Colors can be set in a variety of ways:
-        // - CSS named colors: "red"
-        // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
-        // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
-
-        // Color of the ring on the active monitor.
-        active-color "#df9bedff"
-
-        // Color of the ring on inactive monitors.
-        inactive-color "#949cbb"
-
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
         // The angle is the same as in linear-gradient, and is optional,
@@ -156,11 +145,6 @@ layout {
         off
 
         width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
-
-        // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
     // You can enable drop shadows for windows.
@@ -195,9 +179,6 @@ layout {
 
         // Offset moves the shadow relative to the window.
         offset x=0 y=5
-
-        // You can also change the shadow color and opacity.
-        color "#0007"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
